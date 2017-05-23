@@ -16,13 +16,13 @@
         public void onCreate() {
            super.onCreate();
 
-           LogUtils.TAG = "What you like";
-           LogUtils.LOG_DEBUG = BuildConfig.DEBUG;
+           SHLog.TAG = "What you like";
+           SHLog.LOG_DEBUG = BuildConfig.DEBUG;
 
            //错误日志监控
-           LogUtils.setErrorListener(...);
+           SHLog.setErrorListener(...);
            //一般日志监控
-           LogUtils.setLogListener(...);
+           SHLog.setLogListener(...);
         }
     }
 
